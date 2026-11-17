@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fundación Latinoamérica Joven | Comunidad Terapéutica</title>
+
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS v4 -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <!-- Motion.js para las animaciones -->
+  <script src="https://cdn.jsdelivr.net/npm/motion@latest/dist/motion.js"></script>
+
+  <style>
+    * { font-family: 'Inter', sans-serif; }
+    [data-motion] { opacity: 0; }
+    [data-animate] { opacity: 0; }
+  </style>
+</head>
+<body class="bg-white dark:bg-neutral-950">
+  
+<header id="_header_social_links_h11_001" class="relative">
+ <!-- Barra Superior de Contacto -->
+ <div class="bg-neutral-900 dark:bg-neutral-800">
+ <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+ <div class="flex items-center justify-between h-10">
+ <div class="flex items-center gap-4 text-xs text-neutral-400">
+ <a href="mailto:latinoamericajoven2025@gmail.com" class="hover:text-white transition-colors flex items-center gap-1.5">
+ <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+ <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+ </svg>
+ latinoamericajoven2025@gmail.com
+ </a>
+ <span class="hidden sm:inline">|</span>
+ <a href="tel:+56968424913" class="hidden sm:flex hover:text-white transition-colors items-center gap-1.5">
+ <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+ <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+ </svg>
+ +56 9 6842 4913
+ </a>
+ </div>
+ 
+ <div class="flex items-center gap-3">
+ <a href="#" class="text-neutral-400 hover:text-white transition-colors">
+ <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+ </a>
+ </div>
+ </div>
+ </div>
+ </div>
+ 
+ <!-- Menú Principal -->
+ <div class="bg-white dark:bg-neutral-950 border-b border-neutral-100 dark:border-neutral-900">
+ <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+ <div class="flex items-center justify-between h-16">
+ <!-- LOGO -->
+ <a data-motion="logo" href="#" class="flex items-center gap-2.5">
+ <img src="logo.png" alt="Logo Fundación Latinoamérica Joven" class="w-12 h-12 object-contain">
+ <span class="text-xl font-bold text-neutral-900 dark:text-white">Fundación Latinoamérica Joven</span>
+ </a>
+
+ <!-- Navegación -->
+ <nav data-motion="nav" class="hidden lg:flex items-center gap-8">
+ <a href="#" class="text-sm font-medium text-neutral-900 dark:text-white hover:text-orange-500 dark:hover:text-orange-400 transition-colors">Inicio</a>
+ <a href="#programa" class="text-sm font-medium text-neutral-600 dark:text-neutral-400 hover:text-orange-500 dark:hover:text-orange-400 transition-colors">El Programa</a>
+ <a href="#enfoque" class="text-sm font-medium text-neutral-600 dark:text-neutral-400 hover:text-orange-500 dark:hover:text-orange-400 transition-colors">Enfoque</a>
+ <a href="#faq" class="text-sm font-medium text-neutral-600 dark:text-neutral-400 hover:text-orange-500 dark:hover:text-orange-400 transition-colors">Preguntas</a>
+ </nav>
+
+ <!-- Botones a la derecha -->
+ <div data-motion="actions" class="flex items-center gap-2">
+ <button data-motion="button" 
+ onclick="document.documentElement.classList.toggle('dark')"
+ class="w-10 h-10 flex items-center justify-center rounded-xl hover:bg-neutral-100 dark:hover:bg-neutral-800 transition-colors"
+ >
+ <svg class="w-5 h-5 text-neutral-600 dark:text-neutral-400 hidden dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+ <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>
+ </svg>
+ <svg class="w-5 h-5 text-neutral-600 dark:text-neutral-400 block dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+ <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/>
+ </svg>
+ </button>
+ 
+ <a data-motion="button" href="https://wa.me/56968424913" target="_blank" class="h-10 px-5 bg-orange-500 hover:bg-orange-600 text-white text-sm font-semibold rounded-xl transition-colors flex items-center">
+ Contactar
+ </a>
+ </div>
+ </div>
+ </div>
+ </div>
+</header>
+
+<!-- Sección Principal (Hero) -->
+<section id="_hero_real_estate_v6_001" class="py-20 sm:py-24 bg-white dark:bg-neutral-950">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col gap-12">
+      <!-- Imagen de fondo -->
+      <div data-motion="image" class="relative w-full h-80 sm:h-[450px] rounded-3xl overflow-hidden">
+        <img data-motion="image" src="https://images.unsplash.com/photo-1527689368864-3a821dbccc34?w=1200&auto=format&fit=crop&q=80" alt="Comunidad" class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-linear-to-t from-neutral-900/80 via-neutral-900/40 to-transparent"></div>
+        
+        <!-- Cuadro de texto sobre la imagen -->
+        <div class="absolute bottom-6 left-6 right-6">
+          <div data-motion="card" class="bg-white/95 dark:bg-neutral-900/95 backdrop-blur-xs p-6 md:p-8 rounded-2xl max-w-3xl">
+            <span class="inline-flex items-center gap-2 text-orange-600 dark:text-orange-400 text-sm font-bold tracking-wide uppercase mb-3">
+              <span class="w-2 h-2 bg-orange-500 rounded-full animate-pulse"></span>
+              Programa de Recuperación
+            </span>
+            <h1 class="text-3xl sm:text-5xl font-bold text-neutral-900 dark:text-white leading-[1.1] mb-4">
+              <span data-animate="heading">Transformando vidas,</span>
+              <br>
+              <span data-animate="heading" class="text-orange-600 dark:text-orange-400">construyendo futuro</span>
+            </h1>
+            <p data-animate="text" class="text-lg text-neutral-600 dark:text-neutral-400 mb-6">
+              Acompañamos a personas en su proceso de rehabilitación con un enfoque integral, humano y comunitario.
+            </p>
+            <a data-motion="button" href="#programa" class="inline-flex px-6 py-3 bg-orange-500 hover:bg-orange-600 text-white font-semibold rounded-xl transition-colors">
+              Conoce el Programa
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Sección Nuestro Enfoque (4 Pilares) -->
+<section id="_features_split_panel_v6_001" class="py-20 sm:py-24 bg-neutral-50 dark:bg-neutral-900">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid lg:grid-cols-12 gap-8">
+      <!-- Panel Izquierdo -->
+      <div class="lg:col-span-5" data-motion="panel">
+        <div class="bg-white dark:bg-neutral-800 rounded-3xl p-8 h-full flex flex-col">
+          <span data-motion="badge" class="inline-flex items-center gap-2 px-4 py-1.5 bg-orange-100 dark:bg-orange-900/40 rounded-full text-orange-600 dark:text-orange-400 text-sm font-medium mb-6 w-fit">
+            <span class="w-1.5 h-1.5 bg-orange-500 rounded-full"></span>
+            Nuestro Enfoque
+          </span>
+          <h2 class="text-neutral-900 dark:text-white text-3xl sm:text-4xl font-bold mb-4">
+            <span data-animate="heading">Un modelo integral para la recuperación</span>
+          </h2>
+          <p data-animate="text" class="text-neutral-600 dark:text-neutral-400 text-lg mb-8">
+            Entendemos la adicción como una enfermedad compleja, no como un vicio. Trabajamos desde la raíz.
+          </p>
+          <div class="rounded-2xl overflow-hidden mt-auto">
+            <img data-motion="image" src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&auto=format&fit=crop&q=80" alt="Terapia grupal" class="w-full h-48 object-cover">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Panel Derecho (4 Pilares) -->
+      <div class="lg:col-span-7 grid sm:grid-cols-2 gap-5" id="programa">
+        <!-- Pilar 1 -->
+        <div data-motion="card" class="p-6 bg-orange-50 dark:bg-orange-900/20 rounded-3xl">
+          <div data-motion="icon" class="w-12 h-12 bg-orange-100 dark:bg-orange-800/40 rounded-xl flex items-center justify-center mb-5 text-orange-600 dark:text-orange-400">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+          </div>
+          <h3 class="text-neutral-900 dark:text-white text-lg font-semibold mb-2">Concepción biopsicosocial</h3>
+          <p class="text-neutral-600 dark:text-neutral-400 text-sm">Lo entendemos como una enfermedad que afecta cuerpo, mente y entorno social. No es un vicio.</p>
+        </div>
+        
+        <!-- Pilar 2 -->
+        <div data-motion="card" class="p-6 bg-white dark:bg-neutral-800 rounded-3xl">
+          <div data-motion="icon" class="w-12 h-12 bg-orange-100 dark:bg-orange-900/40 rounded-xl flex items-center justify-center mb-5 text-orange-600 dark:text-orange-400">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <h3 class="text-neutral-900 dark:text-white text-lg font-semibold mb-2">Abstinencia total</h3>
+          <p class="text-neutral-600 dark:text-neutral-400 text-sm">La abstinencia total es nuestra meta terapéutica para lograr una recuperación real y sostenible.</p>
+        </div>
+        
+        <!-- Pilar 3 -->
+        <div data-motion="card" class="p-6 bg-white dark:bg-neutral-800 rounded-3xl">
+          <div data-motion="icon" class="w-12 h-12 bg-orange-100 dark:bg-orange-900/40 rounded-xl flex items-center justify-center mb-5 text-orange-600 dark:text-orange-400">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+          </div>
+          <h3 class="text-neutral-900 dark:text-white text-lg font-semibold mb-2">Terapia grupal</h3>
+          <p class="text-neutral-600 dark:text-neutral-400 text-sm">Fomentamos las redes de apoyo mutuo y la terapia grupal como motor de cambio.</p>
+        </div>
+        
+        <!-- Pilar 4 -->
+        <div data-motion="card" class="p-6 bg-orange-600 rounded-3xl text-white">
+          <div data-motion="icon" class="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center mb-5 text-white">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+          </div>
+          <h3 class="text-white text-lg font-semibold mb-2">Integración familiar</h3>
+          <p class="text-orange-100 text-sm">La familia es parte fundamental del proceso. Integramos activamente a los seres queridos.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Sección de Estadísticas con Gráfico -->
+<section id="_features_centered_cards_v6_001" class="py-20 sm:py-24 bg-white dark:bg-neutral-950">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <!-- Encabezado -->
+    <div class="text-center max-w-3xl mx-auto mb-16" data-motion="header">
+      <span data-motion="badge" class="inline-flex items-center gap-2 px-4 py-1.5 bg-orange-100 dark:bg-orange-900/40 rounded-full text-orange-600 dark:text-orange-400 text-sm font-medium mb-6">
+        <span class="w-1.5 h-1.5 bg-orange-500 rounded-full"></span>
+        Evidencia y Resultados
+      </span>
+      <h2 class="text-neutral-900 dark:text-white text-4xl sm:text-5xl font-bold mb-6">
+        <span data-animate="heading">Egresos por Sexo en Tratamiento</span>
+      </h2>
+      <p data-animate="text" class="text-neutral-600 dark:text-neutral-400 text-lg">
+        Comparativa de resultados en población adulta según datos oficiales de SENDA. Un enfoque de género es clave para nuestra comunidad terapéutica.
+      </p>
+    </div>
+
+    <!-- Panel del Gráfico -->
+    <div data-motion="card" class="bg-neutral-50 dark:bg-neutral-900 rounded-3xl p-8 lg:p-12 border border-neutral-100 dark:border-neutral-800">
+      
+      <!-- Leyenda del Gráfico -->
+      <div class="flex items-center justify-center gap-8 mb-10">
+        <div class="flex items-center gap-2">
+          <span class="w-4 h-4 rounded-md bg-orange-500"></span>
+          <span class="text-sm font-semibold text-neutral-700 dark:text-neutral-300">Mujeres</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <span class="w-4 h-4 rounded-md bg-blue-600"></span>
+          <span class="text-sm font-semibold text-neutral-700 dark:text-neutral-300">Hombres</span>
+        </div>
+      </div>
+
+      <!-- Contenedor de Barras -->
+      <div class="grid md:grid-cols-2 gap-12 lg:gap-20">
+        
+        <!-- Grupo 1: Alta Terapéutica -->
+        <div class="flex flex-col items-center">
+          <h3 class="text-xl font-bold text-neutral-900 dark:text-white mb-8">Alta Terapéutica</h3>
+          
+          <div class="flex items-end gap-6 h-64">
+            <!-- Barra Mujeres -->
+            <div class="flex flex-col items-center group">
+              <span class="text-xl font-bold text-orange-500 mb-2 group-hover:-translate-y-1 transition-transform">33,6%</span>
+              <div class="w-16 md:w-24 bg-orange-500 rounded-t-lg transition-all duration-1000" style="height: 110px;"></div>
+              <span class="text-sm text-neutral-500 mt-3">Mujeres</span>
+            </div>
+            <!-- Barra Hombres -->
+            <div class="flex flex-col items-center group">
+              <span class="text-xl font-bold text-blue-600 mb-2 group-hover:-translate-y-1 transition-transform">32,2%</span>
+              <div class="w-16 md:w-24 bg-blue-600 rounded-t-lg transition-all duration-1000" style="height: 105px;"></div>
+              <span class="text-sm text-neutral-500 mt-3">Hombres</span>
+            </div>
+          </div>
+          
+          <!-- Tarjeta de Brecha -->
+          <div class="mt-8 bg-white dark:bg-neutral-800 px-6 py-3 rounded-xl border border-neutral-200 dark:border-neutral-700 text-center w-full max-w-xs">
+            <p class="text-sm text-neutral-600 dark:text-neutral-400">
+              Brecha: <strong class="text-orange-500">+1,4 pts</strong> a favor de mujeres
+            </p>
+          </div>
+        </div>
+
+        <!-- Grupo 2: Abandono del Tratamiento -->
+        <div class="flex flex-col items-center">
+          <h3 class="text-xl font-bold text-neutral-900 dark:text-white mb-8">Abandono del Tratamiento</h3>
+          
+          <div class="flex items-end gap-6 h-64">
+            <!-- Barra Mujeres -->
+            <div class="flex flex-col items-center group">
+              <span class="text-xl font-bold text-orange-500 mb-2 group-hover:-translate-y-1 transition-transform">33,3%</span>
+              <div class="w-16 md:w-24 bg-orange-500 rounded-t-lg transition-all duration-1000" style="height: 110px;"></div>
+              <span class="text-sm text-neutral-500 mt-3">Mujeres</span>
+            </div>
+            <!-- Barra Hombres -->
+            <div class="flex flex-col items-center group">
+              <span class="text-xl font-bold text-blue-600 mb-2 group-hover:-translate-y-1 transition-transform">38,2%</span>
+              <div class="w-16 md:w-24 bg-blue-600 rounded-t-lg transition-all duration-1000" style="height: 125px;"></div>
+              <span class="text-sm text-neutral-500 mt-3">Hombres</span>
+            </div>
+          </div>
+          
+          <!-- Tarjeta de Brecha -->
+          <div class="mt-8 bg-white dark:bg-neutral-800 px-6 py-3 rounded-xl border border-neutral-200 dark:border-neutral-700 text-center w-full max-w-xs">
+            <p class="text-sm text-neutral-600 dark:text-neutral-400">
+              Brecha: <strong class="text-blue-600">-4,9 pts</strong> (menor deserción femenina)
+            </p>
+          </div>
+        </div>
+
+      </div>
+      
+      <p class="text-center text-xs text-neutral-400 mt-12">Fuente: Datos de Egresos de Población Adulta, SENDA Chile.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- Galería de Imágenes (Carrusel) -->
+<section id="_gallery_carousel_cards_v6_001" class="py-20 sm:py-24 bg-neutral-50 dark:bg-neutral-900">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid lg:grid-cols-2 gap-8 items-end pb-16">
+      <div data-motion="header">
+        <span data-motion="badge" class="text-orange-600 dark:text-orange-400 text-sm font-semibold tracking-wide uppercase">Comunidad</span>
+        <h2 class="text-4xl sm:text-5xl font-bold text-neutral-900 dark:text-white mt-3">
+          <span data-animate="heading">Nuestro día a día</span>
+        </h2>
+      </div>
+      <div class="flex items-center justify-between lg:justify-end gap-6">
+        <p data-motion="description" class="text-neutral-600 dark:text-neutral-400 max-w-sm lg:text-right">
+          Espacios de encuentro, terapia y crecimiento personal en un ambiente seguro.
+        </p>
+        <div data-motion="nav-buttons" class="flex items-center gap-3">
+          <button data-motion="button" data-carousel="prev" type="button" aria-label="Previous slide" class="w-12 h-12 rounded-full border border-neutral-200 dark:border-neutral-700 flex items-center justify-center text-neutral-600 dark:text-neutral-400 hover:bg-orange-500 hover:border-orange-500 hover:text-white transition-all">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+            </svg>
+          </button>
+          <button data-motion="button" data-carousel="next" type="button" aria-label="Next slide" class="w-12 h-12 rounded-full bg-orange-500 hover:bg-orange-600 flex items-center justify-center text-white transition-all">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  
+    <div class="overflow-hidden -mx-4 px-4">
+      <div data-carousel="track" class="carousel-track flex gap-6">
+        <div data-motion="card" class="shrink-0 w-[340px] group">
+          <div class="relative overflow-hidden rounded-2xl">
+            <img data-motion="image" class="w-full h-[420px] object-cover group-hover:scale-105 transition-transform duration-500" src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=600&auto=format&fit=crop&q=80" alt="Terapia grupal">
+            <div class="absolute inset-0 bg-linear-to-t from-neutral-900/80 via-transparent to-transparent"></div>
+            <div class="absolute bottom-0 left-0 right-0 p-6">
+              <span data-motion="badge" class="inline-block px-3 py-1 bg-orange-500/90 text-white text-xs font-medium rounded-full mb-3">Encuentro</span>
+              <h3 class="text-xl font-semibold text-white">Terapia Grupal</h3>
+            </div>
+          </div>
+        </div>
+        
+        <div data-motion="card" class="shrink-0 w-[340px] group">
+          <div class="relative overflow-hidden rounded-2xl">
+            <img data-motion="image" class="w-full h-[420px] object-cover group-hover:scale-105 transition-transform duration-500" src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?w=600&auto=format&fit=crop&q=80" alt="Vida sana">
+            <div class="absolute inset-0 bg-linear-to-t from-neutral-900/80 via-transparent to-transparent"></div>
+            <div class="absolute bottom-0 left-0 right-0 p-6">
+              <span data-motion="badge" class="inline-block px-3 py-1 bg-orange-500/90 text-white text-xs font-medium rounded-full mb-3">Bienestar</span>
+              <h3 class="text-xl font-semibold text-white">Vida Sana</h3>
+            </div>
+          </div>
+        </div>
+        
+        <div data-motion="card" class="shrink-0 w-[340px] group">
+          <div class="relative overflow-hidden rounded-2xl">
+            <img data-motion="image" class="w-full h-[420px] object-cover group-hover:scale-105 transition-transform duration-500" src="https://images.unsplash.com/photo-1609220136736-443140cffec6?w=600&auto=format&fit=crop&q=80" alt="Familia">
+            <div class="absolute inset-0 bg-linear-to-t from-neutral-900/80 via-transparent to-transparent"></div>
+            <div class="absolute bottom-0 left-0 right-0 p-6">
+              <span data-motion="badge" class="inline-block px-3 py-1 bg-orange-500/90 text-white text-xs font-medium rounded-full mb-3">Apoyo</span>
+              <h3 class="text-xl font-semibold text-white">Recuperación de la Familia</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+  (function() {
+    const section = document.getElementById('_gallery_carousel_cards_v6_001');
+    if (!section) return;
+    const track = section.querySelector('[data-carousel="track"]');
+    const prevBtn = section.querySelector('[data-carousel="prev"]');
+    const nextBtn = section.querySelector('[data-carousel="next"]');
+    if (!track) return;
+    const cards = track.children;
+    let currentIndex = 0;
+    let cardsPerView = 3;
+    function updateCardsPerView() {
+      if (window.innerWidth < 640) cardsPerView = 1;
+      else if (window.innerWidth < 1024) cardsPerView = 2;
+      else cardsPerView = 3;
+    }
+    function updateCarousel() {
+      if (!cards.length) return;
+      const cardWidth = cards[0].offsetWidth + 24;
+      track.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+    }
+    function goToSlide(index) {
+      const maxIndex = Math.max(0, cards.length - cardsPerView);
+      currentIndex = Math.max(0, Math.min(index, maxIndex));
+      updateCarousel();
+    }
+    prevBtn?.addEventListener('click', () => goToSlide(currentIndex - 1));
+    nextBtn?.addEventListener('click', () => goToSlide(currentIndex + 1));
+    window.addEventListener('resize', () => {
+      updateCardsPerView();
+      goToSlide(currentIndex);
+    });
+    updateCardsPerView();
+    updateCarousel();
+  })();
+  </script>
+</section>
+
+<!-- Sección de Preguntas Frecuentes (FAQ) -->
+<section id="_faq_bordered_accordion_image_card_v6_025" class="py-20 sm:py-24 bg-white dark:bg-neutral-950" id="faq">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid lg:grid-cols-2 gap-8 lg:gap-16 items-end mb-16">
+      <div data-motion="header">
+        <span data-motion="badge" class="text-orange-600 dark:text-orange-400 text-sm font-semibold tracking-wide uppercase">Preguntas Frecuentes</span>
+        <h2 class="mt-3">
+          <span data-animate="heading" class="block text-4xl sm:text-5xl lg:text-6xl font-bold text-neutral-900 dark:text-white leading-tight">¿Tienes dudas?</span>
+        </h2>
+      </div>
+    </div>
+
+    <div class="grid lg:grid-cols-12 gap-8 lg:gap-12">
+      <div class="lg:col-span-5 flex flex-col gap-6">
+        <div data-motion="image" class="relative rounded-3xl overflow-hidden aspect-4/3">
+          <img data-motion="image" src="https://images.unsplash.com/photo-1573497620053-ea5300f94f21?w=800&auto=format&fit=crop&q=80" alt="Equipo de la fundación" class="w-full h-full object-cover">
+        </div>
+        
+        <div data-motion="card" class="bg-orange-50 dark:bg-orange-900/20 rounded-2xl p-6 flex items-center gap-5">
+          <div data-motion="icon" class="w-14 h-14 rounded-2xl bg-orange-100 dark:bg-orange-800/40 flex items-center justify-center shrink-0">
+            <svg class="w-7 h-7 text-orange-600 dark:text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+            </svg>
+          </div>
+          <div>
+            <p class="text-neutral-900 dark:text-white font-semibold">¿Aún tienes preguntas?</p>
+            <a href="mailto:latinoamericajoven2025@gmail.com" class="text-orange-600 dark:text-orange-400 text-sm hover:underline">Contáctanos →</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="lg:col-span-7 space-y-0">
+        <!-- FAQ Item 1 -->
+        <div data-motion="accordion" data-accordion-item class="border-b border-neutral-200 dark:border-neutral-800">
+          <button type="button" data-accordion-trigger class="w-full flex items-center justify-between text-left py-6 group" aria-expanded="false">
+            <span class="text-lg font-semibold text-neutral-900 dark:text-white group-hover:text-orange-600 dark:group-hover:text-orange-400 transition-colors pr-4">¿Cómo ingreso al programa?</span>
+            <span class="w-10 h-10 rounded-full bg-orange-100 dark:bg-orange-900/40 flex items-center justify-center shrink-0">
+              <svg class="w-5 h-5 text-orange-600 dark:text-orange-400 transform transition-transform duration-300 -rotate-90" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </span>
+          </button>
+          <div data-accordion-content class="hidden pb-6">
+            <p class="text-neutral-600 dark:text-neutral-400 leading-relaxed">A través de una entrevista inicial donde evaluamos la situación y establecemos el plan de acción.</p>
+          </div>
+        </div>
+
+        <!-- FAQ Item 2 -->
+        <div data-motion="accordion" data-accordion-item class="border-b border-neutral-200 dark:border-neutral-800">
+          <button type="button" data-accordion-trigger class="w-full flex items-center justify-between text-left py-6 group" aria-expanded="false">
+            <span class="text-lg font-semibold text-neutral-900 dark:text-white group-hover:text-orange-600 dark:group-hover:text-orange-400 transition-colors pr-4">¿Cuánto tiempo dura el tratamiento?</span>
+            <span class="w-10 h-10 rounded-full bg-neutral-100 dark:bg-neutral-800 flex items-center justify-center shrink-0 group-hover:bg-orange-100 dark:group-hover:bg-orange-900/40 transition-colors">
+              <svg class="w-5 h-5 text-neutral-500 dark:text-neutral-400 group-hover:text-orange-600 dark:group-hover:text-orange-400 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </span>
+          </button>
+          <div data-accordion-content class="hidden pb-6">
+            <p class="text-neutral-600 dark:text-neutral-400 leading-relaxed">Entre 6 a 8 meses de tratamiento intensivo y 5 años de seguimiento continuo para asegurar la reinserción.</p>
+          </div>
+        </div>
+
+        <!-- FAQ Item 3 -->
+        <div data-motion="accordion" data-accordion-item class="border-b border-neutral-200 dark:border-neutral-800">
+          <button type="button" data-accordion-trigger class="w-full flex items-center justify-between text-left py-6 group" aria-expanded="false">
+            <span class="text-lg font-semibold text-neutral-900 dark:text-white group-hover:text-orange-600 dark:group-hover:text-orange-400 transition-colors pr-4">¿Cuáles son los requisitos?</span>
+            <span class="w-10 h-10 rounded-full bg-neutral-100 dark:bg-neutral-800 flex items-center justify-center shrink-0 group-hover:bg-orange-100 dark:group-hover:bg-orange-900/40 transition-colors">
+              <svg class="w-5 h-5 text-neutral-500 dark:text-neutral-400 group-hover:text-orange-600 dark:group-hover:text-orange-400 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </span>
+          </button>
+          <div data-accordion-content class="hidden pb-6">
+            <p class="text-neutral-600 dark:text-neutral-400 leading-relaxed">Voluntad de cambio, ser mayor de 18 años, y contar con familiares o una persona responsable que actúe como apoderado.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+  (function() {
+    const section = document.getElementById('_faq_bordered_accordion_image_card_v6_025');
+    if (!section) return;
+    const triggers = section.querySelectorAll('[data-accordion-trigger]');
+    triggers.forEach(trigger => {
+      if (trigger.dataset.accordionInit) return;
+      trigger.dataset.accordionInit = 'true';
+      const item = trigger.closest('[data-accordion-item]') || trigger.parentElement;
+      if (!item) return;
+      const content = item.querySelector('[data-accordion-content]');
+      if (!content) return;
+      const icon = trigger.querySelector('svg');
+      content.style.overflow = 'hidden';
+      content.style.transition = 'max-height 0.3s ease-out, opacity 0.3s ease-out, padding 0.3s ease-out';
+      const isExpanded = trigger.getAttribute('aria-expanded') === 'true';
+      const isHidden = content.classList.contains('hidden');
+      if (isExpanded && !isHidden) {
+        content.classList.remove('hidden');
+        content.style.maxHeight = content.scrollHeight + 'px';
+        content.style.opacity = '1';
+        if (icon) icon.style.transform = 'rotate(0deg)';
+      } else {
+        content.style.maxHeight = '0px';
+        content.style.opacity = '0';
+        content.style.paddingTop = '0';
+        content.style.paddingBottom = '0';
+        trigger.setAttribute('aria-expanded', 'false');
+        if (icon) icon.style.transform = 'rotate(-90deg)';
+        if (!isHidden) content.classList.add('hidden');
+      }
+      trigger.addEventListener('click', function(e) {
+        e.preventDefault();
+        const currentlyOpen = trigger.getAttribute('aria-expanded') === 'true';
+        if (currentlyOpen) {
+          content.style.maxHeight = content.scrollHeight + 'px';
+          content.offsetHeight; 
+          content.style.maxHeight = '0px';
+          content.style.opacity = '0';
+          content.style.paddingTop = '0';
+          content.style.paddingBottom = '0';
+          trigger.setAttribute('aria-expanded', 'false');
+          if (icon) icon.style.transform = 'rotate(-90deg)';
+          setTimeout(() => {
+            if (trigger.getAttribute('aria-expanded') === 'false') {
+              content.classList.add('hidden');
+            }
+          }, 300);
+        } else {
+          content.classList.remove('hidden');
+          content.style.paddingTop = '';
+          content.style.paddingBottom = '';
+          const height = content.scrollHeight;
+          content.style.maxHeight = '0px';
+          content.offsetHeight; 
+          content.style.maxHeight = height + 'px';
+          content.style.opacity = '1';
+          trigger.setAttribute('aria-expanded', 'true');
+          if (icon) icon.style.transform = 'rotate(0deg)';
+          setTimeout(() => {
+            if (trigger.getAttribute('aria-expanded') === 'true') {
+              content.style.maxHeight = 'none';
+            }
+          }, 300);
+        }
+      });
+    });
+  })();
+  </script>
+</section>
+
+<!-- Llamado a la Acción Final (CTA) -->
+<section id="_cta_centered_gallery_v6_001" class="py-20 sm:py-24 bg-neutral-50 dark:bg-neutral-900">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col gap-12">
+      <div class="max-w-3xl mx-auto text-center" data-motion="hero">
+        <span class="text-orange-600 dark:text-orange-400 text-sm font-semibold tracking-wide uppercase" data-motion="badge">Da el primer paso</span>
+        
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-neutral-900 dark:text-white mt-4">
+          <span data-animate="heading">Tu recuperación y la de tu familia comienza hoy</span>
+        </h2>
+        
+        <p class="text-neutral-600 dark:text-neutral-400 text-lg mt-6" data-animate="text">
+          Estamos en Estación Central, Región Metropolitana. Escríbenos para agendar una entrevista confidencial.
+        </p>
+        
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mt-10">
+          <a data-motion="button" href="https://wa.me/56968424913" target="_blank" class="px-8 py-3.5 bg-orange-500 hover:bg-orange-600 rounded-full text-white font-semibold transition-colors flex items-center gap-2">
+            Hablar por WhatsApp
+            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+          </a>
+          <a data-motion="button" href="mailto:latinoamericajoven2025@gmail.com" class="px-8 py-3.5 border border-neutral-300 dark:border-neutral-700 hover:bg-neutral-100 dark:hover:bg-neutral-800 rounded-full text-neutral-900 dark:text-white font-semibold transition-colors">
+            Enviar Correo
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Pie de Página -->
+<footer id="_footer_contact_newsletter_v6_001" class="bg-white dark:bg-neutral-950 pt-10">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid lg:grid-cols-12 gap-12 pb-12 border-b border-neutral-200 dark:border-neutral-800">
+      
+      <div data-motion="brand" class="lg:col-span-5">
+        <a href="#" class="flex items-center gap-3 mb-6">
+          <img src="logo.png" alt="Logo Fundación Latinoamérica Joven" class="w-12 h-12 object-contain">
+          <span class="text-xl font-bold text-neutral-900 dark:text-white">Fundación Latinoamérica Joven</span>
+        </a>
+        <p class="text-neutral-600 dark:text-neutral-400 mb-6 max-w-sm">Programa de recuperación para personas con consumo problemático y/o dependencia de drogas.</p>
+        
+        <div class="space-y-3">
+          <div class="flex items-center gap-3 text-neutral-600 dark:text-neutral-400">
+            <svg class="w-5 h-5 text-orange-500" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+            </svg>
+            <span>Estación Central, Región Metropolitana</span>
+          </div>
+          <div class="flex items-center gap-3 text-neutral-600 dark:text-neutral-400">
+            <svg class="w-5 h-5 text-orange-500" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+            </svg>
+            <span>+56 9 6842 4913</span>
+          </div>
+          <div class="flex items-center gap-3 text-neutral-600 dark:text-neutral-400">
+            <svg class="w-5 h-5 text-orange-500" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
+              <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+            </svg>
+            <span>latinoamericajoven2025@gmail.com</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="lg:col-span-7 grid sm:grid-cols-2 gap-8">
+        <div data-motion="column">
+          <h4 class="text-neutral-900 dark:text-white font-semibold mb-5">Institución</h4>
+          <ul class="space-y-3">
+            <li><a href="#" class="text-neutral-600 dark:text-neutral-400 hover:text-orange-600 dark:hover:text-orange-400 transition-colors">Sobre Nosotros</a></li>
+            <li><a href="#" class="text-neutral-600 dark:text-neutral-400 hover:text-orange-600 dark:hover:text-orange-400 transition-colors">Dirección: Alfonso Barril</a></li>
+            <li><a href="#" class="text-neutral-600 dark:text-neutral-400 hover:text-orange-600 dark:hover:text-orange-400 transition-colors">Nuestro Enfoque</a></li>
+          </ul>
+        </div>
+        <div data-motion="column">
+          <h4 class="text-neutral-900 dark:text-white font-semibold mb-5">Programa</h4>
+          <ul class="space-y-3">
+            <li><a href="#" class="text-neutral-600 dark:text-neutral-400 hover:text-orange-600 dark:hover:text-orange-400 transition-colors">Requisitos de Ingreso</a></li>
+            <li><a href="#" class="text-neutral-600 dark:text-neutral-400 hover:text-orange-600 dark:hover:text-orange-400 transition-colors">Duración del Tratamiento</a></li>
+            <li><a href="#" class="text-neutral-600 dark:text-neutral-400 hover:text-orange-600 dark:hover:text-orange-400 transition-colors">Preguntas Frecuentes</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <div data-motion="bottom" class="py-8 flex flex-col sm:flex-row items-center justify-between gap-6">
+      <p class="text-neutral-500 text-sm">© 2024 Fundación Latinoamérica Joven. Todos los derechos reservados.</p>
+    </div>
+
+  </div>
+</footer>
+  
+  <!-- Script de Animaciones (Motion) -->
+  <script>
+(function() {
+  'use strict';
+  const animations = {
+    'fade': { opacity: [0, 1] },
+    'fade-up': { opacity: [0, 1], transform: ['translateY(40px)', 'translateY(0)'], filter: ['blur(10px)', 'blur(0px)'] },
+    'fade-down': { opacity: [0, 1], transform: ['translateY(-40px)', 'translateY(0)'], filter: ['blur(10px)', 'blur(0px)'] },
+    'fade-left': { opacity: [0, 1], transform: ['translateX(40px)', 'translateX(0)'], filter: ['blur(10px)', 'blur(0px)'] },
+    'fade-right': { opacity: [0, 1], transform: ['translateX(-40px)', 'translateX(0)'], filter: ['blur(10px)', 'blur(0px)'] },
+    'scale': { opacity: [0, 1], transform: ['scale(0.9)', 'scale(1)'], filter: ['blur(10px)', 'blur(0px)'] },
+    'scale-up': { opacity: [0, 1], transform: ['scale(0.85) translateY(30px)', 'scale(1) translateY(0)'], filter: ['blur(10px)', 'blur(0px)'] },
+    'blur-sm': { opacity: [0, 1], filter: ['blur(15px)', 'blur(0px)'] },
+    'blur-up': { opacity: [0, 1], transform: ['translateY(30px)', 'translateY(0)'], filter: ['blur(15px)', 'blur(0px)'] },
+    'card': { opacity: [0, 1], transform: ['translateY(40px)', 'translateY(0)'], filter: ['blur(10px)', 'blur(0px)'] },
+    'button': { opacity: [0, 1], transform: ['translateY(20px)', 'translateY(0)'], filter: ['blur(8px)', 'blur(0px)'] },
+    'badge': { opacity: [0, 1], transform: ['translateY(-15px)', 'translateY(0)'], filter: ['blur(8px)', 'blur(0px)'] },
+    'icon': { opacity: [0, 1], transform: ['scale(0.8)', 'scale(1)'], filter: ['blur(8px)', 'blur(0px)'] },
+    'image': { opacity: [0, 1], transform: ['scale(0.9)', 'scale(1)'], filter: ['blur(15px)', 'blur(0px)'] },
+    'accordion': { opacity: [0, 1], transform: ['translateY(20px)', 'translateY(0)'], filter: ['blur(8px)', 'blur(0px)'] },
+    'logo': { opacity: [0, 1], transform: ['scale(0.9)', 'scale(1)'], filter: ['blur(8px)', 'blur(0px)'] },
+    'heading': { opacity: [0, 1], transform: ['translateY(20px)', 'translateY(0)'], filter: ['blur(10px)', 'blur(0px)'] },
+    'text': { opacity: [0, 1], transform: ['translateY(15px)', 'translateY(0)'], filter: ['blur(8px)', 'blur(0px)'] },
+    'container': null, 'hero': null, 'content': null, 'header': null
+  };
+  const defaultAnimation = { opacity: [0, 1], transform: ['translateY(30px)', 'translateY(0)'], filter: ['blur(10px)', 'blur(0px)'] };
+  const defaults = { duration: 0.7, delay: 0, stagger: 0.12, threshold: 0.2, wordDelay: 0.03 };
+  function isInViewport(el) {
+    const rect = el.getBoundingClientRect();
+    return (rect.top < (window.innerHeight || document.documentElement.clientHeight) && rect.bottom > 0);
+  }
+  function isInIframe() {
+    try { return window.self !== window.top; } catch (e) { return true; }
+  }
+  function splitWords(element) {
+    const text = element.textContent;
+    const words = text.split(/(\s+)/);
+    element.innerHTML = '';
+    words.forEach(word => {
+      if (word.trim()) {
+        const span = document.createElement('span');
+        span.className = 'motion-word';
+        span.style.display = 'inline-block';
+        span.style.opacity = '0';
+        span.textContent = word;
+        element.appendChild(span);
+      } else {
+        element.appendChild(document.createTextNode(word));
+      }
+    });
+    element.style.opacity = '1';
+    return element.querySelectorAll('.motion-word');
+  }
+  function getInitialStyles(type) {
+    const anim = animations[type];
+    const effectiveAnim = anim === undefined ? defaultAnimation : anim;
+    if (!effectiveAnim) return { opacity: '0' };
+    const styles = { opacity: '0' };
+    if (effectiveAnim.transform) styles.transform = effectiveAnim.transform[0];
+    if (effectiveAnim.filter) styles.filter = effectiveAnim.filter[0];
+    return styles;
+  }
+  function hideElement(el, type) {
+    const styles = getInitialStyles(type);
+    Object.assign(el.style, styles);
+  }
+  function init() {
+    if (!window.Motion) {
+      document.querySelectorAll('[data-motion], [data-animate]').forEach(el => { el.style.opacity = '1'; });
+      return;
+    }
+    const { animate, inView } = window.Motion;
+    const inIframe = isInIframe();
+    document.querySelectorAll('[data-animate]').forEach(el => {
+      const words = splitWords(el);
+      const delay = parseFloat(el.dataset.delay) || 0;
+      const wordDelay = parseFloat(el.dataset.wordDelay) || defaults.wordDelay;
+      const duration = parseFloat(el.dataset.duration) || 0.6;
+      const animateWords = () => {
+        words.forEach((word, i) => {
+          animate(word, { opacity: [0, 1], transform: ['translateY(20px)', 'translateY(0)'], filter: ['blur(10px)', 'blur(0px)'] }, { duration: duration, delay: delay + (i * wordDelay), easing: [0.25, 0.1, 0.25, 1] });
+        });
+      };
+      if (inIframe || isInViewport(el)) setTimeout(animateWords, 100);
+      else inView(el, animateWords, { amount: defaults.threshold });
+    });
+    document.querySelectorAll('[data-motion]').forEach(el => {
+      const type = el.dataset.motion;
+      const anim = animations[type];
+      if (anim === null) { el.style.opacity = '1'; return; }
+      const effectiveAnim = anim === undefined ? defaultAnimation : anim;
+      const delay = parseFloat(el.dataset.delay) || 0;
+      const duration = parseFloat(el.dataset.duration) || defaults.duration;
+      const threshold = parseFloat(el.dataset.threshold) || defaults.threshold;
+      hideElement(el, type);
+      const animateEl = () => {
+        animate(el, effectiveAnim, { duration: duration, delay: delay, easing: [0.25, 0.1, 0.25, 1] });
+      };
+      if (inIframe || isInViewport(el)) setTimeout(animateEl, 100);
+      else inView(el, animateEl, { amount: threshold });
+    });
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
+  else init();
+})();
+  </script>
+</body>
+</html>
